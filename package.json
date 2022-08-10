@@ -1,0 +1,34 @@
+{
+  "name": "pwsns",
+  "version": "0.0.1",
+  "description": "Social Network Service by Express",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yusooo/PersonalWebSite_01.git"
+  },
+  "author": "yuso",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yusooo/PersonalWebSite_01/issues"
+  },
+  "homepage": "https://github.com/yusooo/PersonalWebSite_01#readme",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-session": "^1.17.3",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^2.3.3",
+    "nunjucks": "^3.2.3",
+    "sequelize": "^6.21.3",
+    "sequelize-cli": "^6.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
