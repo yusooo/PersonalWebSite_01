@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="profile-wrap">
+            <div class="profile">
+                {% if user and user.id %}
+                <div class="user-name">{{'안녕하세요! ' + user.nick + '님'}}</div>
+                <div class="half">
+                    <div>팔로잉</div>
+                    <div class="count following-count">{{followingCoung}}</div>
+                </div>
+                <div class="count follower-count">{{floowerCount}}</div>
+            </div>
+            <input id="my-id" type="hidden" value="{{user.id}}">
+            <a id="my-profile" href="/profile" class="btn">내 프로필</a>
+            <a id="logout" href="/auth/logout" class="btn">로그아웃</a>
+            % else %
+            <form id="login-form" action="/auth/login" method="post">
+                
+            </form>
+        </div>
+    </div>
+</body>
+</html>
