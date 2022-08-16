@@ -56,7 +56,7 @@ input[type='text'], input[type='email'], input[type='password'], textarea{
         vertical-align: top;
     }
 @media screen and (min-width: 800px) { .timeline {width: 500px;}}
-#twit-form {
+#soit-form {
     border-bottom: 1px solid silver;
     padding: 10px;
     background: lightcoral;
@@ -74,3 +74,35 @@ input[type='text'], input[type='email'], input[type='password'], textarea{
     height: 37px;
     line-height: 37px;
 }
+#img {display: none;}
+#soit {width: 100%; min-height: 72px;}
+#soit-btn {
+    float: right;
+    color: white;
+    background: crimson;
+    border: none;
+}
+.soit{
+    border: 1px solid silver;
+    border-radius: 4px;
+    padding: 10px;
+    position: relative;
+    margin-bottom: 10px;
+}
+.soit-author{ display: inline-block; font-weight: bold; margin-right: 10px;}
+.soit-follow{
+    padding: 1px 5px;
+    background: #fff;
+    border: 1px solid silver;
+    border-radius: 4px;
+    color: crimson;
+    font-size: 12px;
+    cursor: pointer;
+}
+.soit-img{ text-align: center;}
+.soit-img img{ max-width: 75%; }
+.error-message {color: red; font-weight: bold;}
+#search-form {text-align: right; }
+#join-form { padding: 10px; text-align: center;}
+#hashtag-form { text-align: right; }
+footer { text-align: center; }
