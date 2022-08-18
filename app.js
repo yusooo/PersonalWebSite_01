@@ -17,6 +17,21 @@ nunjucks.configure('views', {
     watch: true,
 });
 
+const pageRouter = require('./routes/page');
+const { sequelize } = require('./models');
+
+nunjucks.configure('views', {
+    express: app,
+    watch: true,
+});
+sequelize.sync({force: false})
+    .then(()=>{
+        console.log('데이터베이스 연결 성공');
+    })
+    .catch((err)=>{
+        console.error(err);
+    });
+
 app.use(morgan('dev'));
 app.use(express.static(path.join(__dirname, 'public'))); 
 app.use(express.json()); 
